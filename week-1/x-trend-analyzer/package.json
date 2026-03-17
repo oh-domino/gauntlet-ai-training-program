@@ -1,0 +1,39 @@
+{
+  "name": "x-trend-analyzer",
+  "version": "1.0.0",
+  "description": "Signal-to-noise X.com trend analyzer CLI using MCP Brave Search and Groq.",
+  "main": "dist/index.js",
+  "bin": {
+    "x-trend": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "cli",
+    "mcp",
+    "brave",
+    "search",
+    "groq",
+    "x.com",
+    "twitter",
+    "trend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "groq-sdk": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
